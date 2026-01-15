@@ -245,6 +245,20 @@
 }
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
+  .about-card-decorated {
+    padding: 50px 30px;
+  }
+
+  .about-card-decorated h2 {
+    font-size: 2.2rem;
+  }
+
+  .about-card-decorated::before,
+  .about-card-decorated::after {
+    font-size: 48px;
+  }
+}
+
 
   /* Header logo */
   .logo img {
@@ -273,6 +287,80 @@
     font-size: 2rem;
   }
 }
+/* ===== ABOUT TEMPLATE BACKGROUND ===== */
+.about-template {
+  background: #f6f7f6;
+  padding: 120px 8%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ===== DECORATED CARD ===== */
+.about-card-decorated {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 60px;
+  background: #ffffff;
+  border-radius: 32px;
+  border: 3px dashed #b5b8bb;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== TEXT ===== */
+.about-card-decorated h2 {
+  font-size: 3rem;
+  color: #2f3437;
+  margin-bottom: 20px;
+}
+
+.about-card-decorated p {
+  color: #5a646a;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  max-width: 650px;
+  margin: 0 auto;
+}
+.about-card-decorated::before,
+.about-card-decorated::after {
+  content: "🐾";
+  position: absolute;
+  font-size: 64px;
+  opacity: 0.18;
+}
+
+.about-card-decorated::before {
+  top: -35px;
+  left: -35px;
+  color: #9aa3a8; /* gray-blue */
+}
+
+.about-card-decorated::after {
+  bottom: -35px;
+  right: -35px;
+  color: #b0b5b8; /* neutral gray */
+}
+.about-template::before,
+.about-template::after {
+  content: "🐾 🐾 🐾";
+  position: absolute;
+  font-size: 32px;
+  opacity: 0.08;
+  letter-spacing: 40px;
+}
+
+.about-template::before {
+  top: 40px;
+  left: 10%;
+  color: #8faeb3;
+}
+
+.about-template::after {
+  bottom: 40px;
+  right: 10%;
+  color: #bfa8a0;
+}
 
   </style>
 </head>
@@ -295,15 +383,16 @@
   </header>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Compassionate Veterinary Care</h1>
-      <p>
-        Dedicated to the health, comfort, and well-being of your beloved pets
-        through gentle, professional veterinary care.
-      </p>
-    </div>
-  </section>
+ <section class="about-template">
+  <div class="about-card-decorated">
+    <h2>About Our Clinic</h2>
+    <p>
+      We provide compassionate, gentle veterinary care focused on comfort,
+      trust, and long-term wellness for every pet.
+    </p>
+  </div>
+</section>
+
 
 
   <!-- ABOUT -->
