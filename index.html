@@ -388,6 +388,61 @@
   position: relative;
   z-index: 1;
 }
+/* ===== CONTACT TEMPLATE ===== */
+.contact-template {
+  padding: 60px 8%;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.55);
+  padding: 35px 45px;
+  border-radius: 18px;
+  gap: 30px;
+}
+
+/* LEFT SIDE */
+.contact-left ul {
+  list-style: none;
+}
+
+.contact-left li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+/* RIGHT SIDE */
+.contact-right {
+  text-align: right;
+}
+
+.contact-btn {
+  display: inline-block;
+  padding: 10px 26px;
+  border-radius: 999px;
+  background: #ffffff;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.contact-details p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contact-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-right {
+    text-align: center;
+  }
+}
 
   </style>
 </head>
@@ -537,17 +592,31 @@
 
 
   <!-- CONTACT -->
-<section id="contact" class="contact contact-bg">
-    <h2>Contact Us</h2>
-    <p>
-      Reach out to learn more about our clinic or veterinary services.
-    </p>
-    <div class="contact-info">
-      <p>📍 123 Pet Care Street, Your City</p>
-      <p>📞 (123) 456-7890</p>
-      <p>✉️ info@gentlecarevet.com</p>
+<section id="contact" class="contact contact-template">
+  <div class="contact-box">
+
+    <!-- LEFT -->
+    <div class="contact-left">
+      <ul>
+        <li>✔ Pet-Friendly & Health-Focused Care</li>
+        <li>✔ Trusted Veterinary Service</li>
+        <li>✔ Comfort & Compassion Provided</li>
+      </ul>
     </div>
-  </section>
+
+    <!-- RIGHT -->
+    <div class="contact-right">
+      <a href="#contact" class="contact-btn">Contact Us</a>
+
+      <div class="contact-details">
+        <p>📞 +123-456-7890</p>
+        <p>🌐 www.gentlecarevet.com</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- FOOTER -->
   <footer>
