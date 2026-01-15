@@ -279,6 +279,41 @@
     font-size: 2.1rem;
   }
 }
+/* ===== SERVICES BACKGROUND IMAGE ===== */
+.services-bg {
+  position: relative;
+  background:
+    linear-gradient(
+      rgba(249, 251, 250, 0.9),
+      rgba(249, 251, 250, 0.9)
+    ),
+    url("images/ourservices.webp") center / cover no-repeat;
+}
+
+/* Layout inspired by reference image */
+.services-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+
+/* Service cards */
+.service-box {
+  background: #ffffff;
+  padding: 40px 35px;
+  border-radius: 22px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.06);
+}
+
+/* Keep text colors unchanged */
+.service-box h3 {
+  margin-bottom: 12px;
+}
+
+.service-box p {
+  line-height: 1.7;
+}
 
   </style>
 </head>
@@ -333,27 +368,46 @@
 
 
   <!-- SERVICES -->
-  <section id="services" class="services">
-    <h2>Our Services</h2>
-    <div class="service-grid">
-      <div class="service-card">
-        <h3>General Health Exams</h3>
-        <p>Routine checkups to ensure your pet’s long-term health.</p>
-      </div>
-      <div class="service-card">
-        <h3>Vaccinations</h3>
-        <p>Preventative care tailored to your pet’s lifestyle.</p>
-      </div>
-      <div class="service-card">
-        <h3>Dental Care</h3>
-        <p>Oral health assessments and treatments.</p>
-      </div>
-      <div class="service-card">
-        <h3>Surgical Care</h3>
-        <p>Safe and professional surgical procedures.</p>
-      </div>
+ <section id="services" class="services services-bg">
+  <h2>Our Services</h2>
+
+  <div class="services-wrapper">
+
+    <div class="service-box">
+      <h3>General Health Exams</h3>
+      <p>
+        Routine wellness exams focused on early detection, prevention,
+        and long-term health for your pet.
+      </p>
     </div>
-  </section>
+
+    <div class="service-box">
+      <h3>Vaccinations</h3>
+      <p>
+        Customized vaccination programs designed to protect pets at
+        every life stage.
+      </p>
+    </div>
+
+    <div class="service-box">
+      <h3>Dental Care</h3>
+      <p>
+        Professional dental evaluations and treatments to support oral
+        health and comfort.
+      </p>
+    </div>
+
+    <div class="service-box">
+      <h3>Surgical Care</h3>
+      <p>
+        Safe, modern surgical procedures performed with precision,
+        care, and monitoring.
+      </p>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- WHY US -->
   <section id="why" class="why-us">
