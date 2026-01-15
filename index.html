@@ -115,42 +115,41 @@
 }
 
 
-    /* ===== ABOUT ===== */
-    .about {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 60px;
-      align-items: center;
-    }
+   /* ===== ABOUT CARD (NEW) ===== */
+.about-card {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 60px 50px;
+  text-align: center;
 
-    .about img {
-      width: 100%;
-      border-radius: 18px;
-    }
+  background: rgba(255, 255, 255, 0.88);
+  border-radius: 24px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+}
 
-    /* ===== SERVICES ===== */
-    .services {
-      background: #ffffff;
-    }
+.about-card h2 {
+  font-size: 2.4rem;
+  color: #2f3437;
+  margin-bottom: 20px;
+}
 
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 40px;
-      margin-top: 40px;
-    }
+.about-card p {
+  color: #555f66;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+.about-card h2 {
+  font-size: 2.4rem;
+  color: #2f3437;
+  margin-bottom: 20px;
+}
 
-    .service-card {
-      background: #f9fbfa;
-      padding: 35px;
-      border-radius: 20px;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.06);
-    }
+.about-card p {
+  color: #555f66;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
 
-    .service-card h3 {
-      margin-bottom: 10px;
-      color: #3a7d7c;
-    }
 
     /* ===== WHY US ===== */
     .why-us {
@@ -234,6 +233,46 @@
     height: auto;
   }
 }
+.themed-about {
+  background:
+    linear-gradient(
+      rgba(245, 246, 247, 0.92),
+      rgba(245, 246, 247, 0.92)
+    ),
+    url("images/about-aboutme.png") center/contain no-repeat;
+
+  padding: 100px 8%;
+}
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+  /* Header logo */
+  .logo img {
+    height: 45px;
+  }
+
+  /* Hero text */
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  /* About section */
+  .about {
+    grid-template-columns: 1fr;
+  }
+
+  .about-card {
+    padding: 40px 25px;
+  }
+
+  .about-card h2 {
+    font-size: 2rem;
+  }
+}
 
   </style>
 </head>
@@ -268,19 +307,17 @@
 
 
   <!-- ABOUT -->
-  <section id="about">
-    <div class="about">
-      <div>
-        <h2>About Our Clinic</h2>
-        <p>
-          We are a modern veterinary clinic committed to providing attentive,
-          compassionate care for animals of all kinds. Our approach focuses on
-          trust, comfort, and long-term wellness.
-        </p>
-      </div>
-      <img src="about.jpg" alt="Veterinary clinic" />
-    </div>
-  </section>
+  <section id="about" class="about themed-about">
+  <div class="about-card">
+    <h2>About Our Clinic</h2>
+    <p>
+      We are a compassionate veterinary clinic dedicated to providing gentle,
+      professional care for pets. Our focus is on comfort, trust, and long-term
+      wellness for every animal we serve.
+    </p>
+  </div>
+</section>
+
 
   <!-- SERVICES -->
   <section id="services" class="services">
