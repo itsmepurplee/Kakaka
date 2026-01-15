@@ -209,6 +209,76 @@
   font-size: 1.15rem;
   max-width: 520px;
 }
+/* ===== ABOUT TEMPLATE ===== */
+.about-template {
+  background: #f9fbfa;
+  display: flex;
+  justify-content: center;
+}
+
+.about-card {
+  position: relative;
+  background: #ffffff;
+  border: 2px dashed #d9c5b2;
+  border-radius: 28px;
+  padding: 70px 60px;
+  max-width: 800px;
+  text-align: center;
+}
+
+/* Title */
+.about-card h2 {
+  font-size: 2.6rem;
+  color: #6b4b3a;
+  margin-bottom: 25px;
+}
+
+/* Text */
+.about-card p {
+  font-size: 1.05rem;
+  color: #4f5d63;
+  margin: 0 auto;
+}
+
+/* Paws */
+.paw {
+  position: absolute;
+  font-size: 2.2rem;
+  opacity: 0.35;
+  color: #c8a98a; /* very light brown */
+}
+
+/* Paw positions */
+.paw-top-left {
+  top: -20px;
+  left: -20px;
+}
+
+.paw-top-right {
+  top: -20px;
+  right: -20px;
+}
+
+.paw-bottom-left {
+  bottom: -20px;
+  left: -20px;
+}
+
+.paw-bottom-right {
+  bottom: -20px;
+  right: -20px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-card {
+    padding: 50px 30px;
+  }
+
+  .about-card h2 {
+    font-size: 2.1rem;
+  }
+}
 
   </style>
 </head>
@@ -241,19 +311,26 @@
   </section>
 
   <!-- ABOUT -->
-  <section id="about">
-    <div class="about">
-      <div>
-        <h2>About Our Clinic</h2>
-        <p>
-          We are a modern veterinary clinic committed to providing attentive,
-          compassionate care for animals of all kinds. Our approach focuses on
-          trust, comfort, and long-term wellness.
-        </p>
-      </div>
-      <img src="about.jpg" alt="Veterinary clinic" />
-    </div>
-  </section>
+ <section id="about" class="about-template">
+  <div class="about-card">
+
+    <span class="paw paw-top-left">🐾</span>
+    <span class="paw paw-top-right">🐾</span>
+    <span class="paw paw-bottom-left">🐾</span>
+    <span class="paw paw-bottom-right">🐾</span>
+
+    <h2>About Us</h2>
+
+    <p>
+      GentleCare Veterinary Clinic is dedicated to compassionate, stress-free
+      care for pets and their families. We focus on trust, comfort, and
+      long-term wellness through gentle handling and modern veterinary
+      practices.
+    </p>
+
+  </div>
+</section>
+
 
   <!-- SERVICES -->
   <section id="services" class="services">
