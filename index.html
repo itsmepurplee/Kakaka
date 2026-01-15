@@ -443,6 +443,58 @@
     text-align: center;
   }
 }
+/* ===== CONTACT BAR TEMPLATE ===== */
+.contact-bar {
+  padding: 50px 8%;
+}
+
+.contact-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.55); /* template-style bar */
+  padding: 30px 45px;
+  border-radius: 16px;
+  gap: 30px;
+}
+
+/* LEFT */
+.contact-left p {
+  margin: 6px 0;
+  font-size: 1rem;
+}
+
+/* RIGHT */
+.contact-right {
+  text-align: right;
+}
+
+.contact-pill {
+  display: inline-block;
+  padding: 8px 24px;
+  border-radius: 999px;
+  background: #ffffff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact-info span {
+  display: block;
+  font-size: 0.95rem;
+  margin-top: 4px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .contact-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-right {
+    text-align: center;
+  }
+}
 
   </style>
 </head>
@@ -592,30 +644,29 @@
 
 
   <!-- CONTACT -->
-<section id="contact" class="contact contact-template">
-  <div class="contact-box">
+<section id="contact" class="contact contact-bar">
+  <div class="contact-inner">
 
-    <!-- LEFT -->
+    <!-- LEFT SIDE -->
     <div class="contact-left">
-      <ul>
-        <li>✔ Pet-Friendly & Health-Focused Care</li>
-        <li>✔ Trusted Veterinary Service</li>
-        <li>✔ Comfort & Compassion Provided</li>
-      </ul>
+      <p>✔ Pet-Friendly Health Focus</p>
+      <p>✔ Trusted Veterinary Service</p>
+      <p>✔ Comfort & Compassion Provided</p>
     </div>
 
-    <!-- RIGHT -->
+    <!-- RIGHT SIDE -->
     <div class="contact-right">
-      <a href="#contact" class="contact-btn">Contact Us</a>
+      <a href="#contact" class="contact-pill">Contact Us</a>
 
-      <div class="contact-details">
-        <p>📞 +123-456-7890</p>
-        <p>🌐 www.gentlecarevet.com</p>
+      <div class="contact-info">
+        <span>📞 +123-456-7890</span>
+        <span>🌐 www.gentlecarevet.com</span>
       </div>
     </div>
 
   </div>
 </section>
+
 
 
   <!-- FOOTER -->
