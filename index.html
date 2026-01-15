@@ -92,22 +92,28 @@
 
 
     .hero-content {
-      max-width: 650px;
-    }
+  max-width: 650px;
+}
 
-    .hero h1 {
-  color: #2f3e46;
+.hero h1 {
+  color: #1f2d32;
+  font-size: 3.2rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
 }
 
 .hero p {
-  color: #4f5d63;
+  color: #42535a;
+  font-size: 1.1rem;
+}
+.hero h1 {
+  font-size: 2.2rem;
 }
 
+.hero p {
+  font-size: 1rem;
+}
 
-    .hero p {
-      color: #e6f2f1;
-      font-size: 1.1rem;
-    }
 
     /* ===== ABOUT ===== */
     .about {
@@ -194,6 +200,16 @@
   width: 180px;
   height: auto;
 }
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 @media (max-width: 768px) {
   .logo-template img {
@@ -222,6 +238,13 @@
   .hero h1 {
     font-size: 2.4rem;
   }
+.hero-content h1 {
+  animation: fadeUp 1s ease forwards;
+}
+
+.hero-content p {
+  animation: fadeUp 1.2s ease forwards;
+}
 
   .logo img {
     height: 45px;
