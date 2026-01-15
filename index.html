@@ -314,6 +314,53 @@
 .service-box p {
   line-height: 1.7;
 }
+/* ===== WHY TEMPLATE STYLE ===== */
+.why-template {
+  text-align: center;
+}
+
+/* Header */
+.why-header {
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.why-header p {
+  margin: 15px auto 0;
+}
+
+/* Highlight word (same color family, no text color change elsewhere) */
+.why-header .highlight {
+  color: #3a7d7c;
+}
+
+/* Cards layout */
+.why-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+}
+
+/* Card */
+.why-card {
+  background: #ffffff;
+  padding: 35px 30px;
+  border-radius: 22px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.06);
+}
+
+/* Icon */
+.why-icon {
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .why-header h2 {
+    font-size: 2rem;
+  }
+}
 
   </style>
 </head>
@@ -410,23 +457,57 @@
 
 
   <!-- WHY US -->
-  <section id="why" class="why-us">
-    <h2>Why Choose Us</h2>
-    <div class="why-grid">
-      <div class="why-item">
-        <h3>Gentle Approach</h3>
-        <p>We prioritize calm, stress-free care for every animal.</p>
-      </div>
-      <div class="why-item">
-        <h3>Experienced Team</h3>
-        <p>Skilled professionals with a passion for animal wellness.</p>
-      </div>
-      <div class="why-item">
-        <h3>Modern Facility</h3>
-        <p>Clean, well-equipped clinic designed for comfort.</p>
-      </div>
+ <section id="why" class="why-us why-template">
+
+  <div class="why-header">
+    <h2><span class="highlight">Why</span> Choose Us?</h2>
+    <p>
+      As your trusted veterinary care team, we focus on comfort, trust,
+      and compassionate treatment for every pet.
+    </p>
+  </div>
+
+  <div class="why-cards">
+
+    <div class="why-card">
+      <div class="why-icon">🐾</div>
+      <h3>Personalized Care</h3>
+      <p>
+        Every pet receives individualized attention based on their
+        needs, temperament, and health history.
+      </p>
     </div>
-  </section>
+
+    <div class="why-card">
+      <div class="why-icon">💚</div>
+      <h3>Gentle Handling</h3>
+      <p>
+        We use calm, fear-free techniques to reduce stress and ensure
+        a positive experience for pets.
+      </p>
+    </div>
+
+    <div class="why-card">
+      <div class="why-icon">🩺</div>
+      <h3>Experienced Team</h3>
+      <p>
+        Our veterinary professionals are trained, compassionate, and
+        dedicated to lifelong pet wellness.
+      </p>
+    </div>
+
+    <div class="why-card">
+      <div class="why-icon">🏥</div>
+      <h3>Trusted by Families</h3>
+      <p>
+        We are proud to care for generations of pets with honesty,
+        transparency, and reliability.
+      </p>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- CONTACT -->
   <section id="contact" class="contact">
