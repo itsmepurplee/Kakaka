@@ -76,25 +76,33 @@
     }
 
     /* ===== HERO ===== */
-    .hero {
-      background: linear-gradient(
-        rgba(0,0,0,0.35),
-        rgba(0,0,0,0.35)
-      ), url("hero.jpg") center/cover no-repeat;
-      height: 90vh;
-      display: flex;
-      align-items: center;
-      color: white;
-    }
+   .hero {
+  background:
+    linear-gradient(
+      rgba(245, 247, 246, 0.88),   /* gray overlay */
+      rgba(245, 247, 246, 0.88)
+    ),
+    url("images/petshop.png") center/cover no-repeat;
+
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  color: #2f3e46;
+}
+
 
     .hero-content {
       max-width: 650px;
     }
 
     .hero h1 {
-      font-size: 3.2rem;
-      margin-bottom: 20px;
-    }
+  color: #2f3e46;
+}
+
+.hero p {
+  color: #4f5d63;
+}
+
 
     .hero p {
       color: #e6f2f1;
@@ -175,26 +183,7 @@
       font-size: 0.9rem;
     }
 
-    /* ===== RESPONSIVE ===== */
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2.4rem;
-      }
-@media (max-width: 768px) {
-  .logo img {
-    height: 45px;
-  }
-}
-@media (max-width: 768px) {
-  .logo-template {
-    width: 280px;
-    height: 280px;
-  }
-
-  .logo-template img {
-    width: 110px;
-  }
-}
+    
 
       nav a {
         margin-left: 15px;
@@ -226,6 +215,28 @@
 .logo-template img {
   width: 140px; /* adjust if needed */
   height: auto;
+}
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+
+  .logo img {
+    height: 45px;
+    width: auto;
+  }
+
+  .logo-template {
+    width: 280px;
+    height: 280px;
+  }
+
+  .logo-template img {
+    width: 110px;
+    height: auto;
+  }
 }
 
   </style>
