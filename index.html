@@ -185,11 +185,44 @@
     height: 45px;
   }
 }
+@media (max-width: 768px) {
+  .logo-template {
+    width: 280px;
+    height: 280px;
+  }
+
+  .logo-template img {
+    width: 110px;
+  }
+}
 
       nav a {
         margin-left: 15px;
       }
     }
+    /* ===== LOGO TEMPLATE SECTION ===== */
+.logo-template-section {
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+  background: #f9fbfa;
+}
+
+.logo-template {
+  width: 400px;
+  height: 400px;
+  background: url("images/logo-template.jpg") center/contain no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Center logo */
+.logo-template img {
+  width: 140px; /* adjust if needed */
+  height: auto;
+}
+
   </style>
 </head>
 
@@ -198,8 +231,9 @@
   <!-- NAVBAR -->
   <header>
   <div class="logo">
-  <img src="logo.png" alt="GentleCare Veterinary Clinic Logo">
+  <img src="images/logo.png" alt="GentleCare Veterinary Clinic Logo">
 </div>
+
 
     <nav>
       <a href="#about">About</a>
@@ -219,6 +253,11 @@
       </p>
     </div>
   </section>
+<section class="logo-template-section">
+  <div class="logo-template">
+    <img src="images/logo.png" alt="Veterinary Clinic Logo">
+  </div>
+</section>
 
   <!-- ABOUT -->
   <section id="about">
