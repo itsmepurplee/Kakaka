@@ -495,6 +495,69 @@
     text-align: center;
   }
 }
+/* ===== CONTACT TEMPLATE V2 ===== */
+.contact-template-v2 {
+  padding: 70px 8%;
+  text-align: center;
+}
+
+.contact-content {
+  padding: 50px 40px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.55); /* matches template bar */
+}
+
+/* Features layout */
+.contact-features {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+}
+
+.feature p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+.feature small {
+  font-size: 0.85rem;
+  opacity: 0.9;
+}
+
+/* Paw icon */
+.paw {
+  font-size: 1.8rem;
+}
+
+/* CTA button */
+.contact-cta {
+  display: inline-block;
+  padding: 12px 36px;
+  border-radius: 6px;
+  background: #ffffff;
+  font-weight: 600;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .contact-features {
+    gap: 30px;
+  }
+
+  .feature {
+    text-align: center;
+    flex-direction: column;
+  }
+}
 
   </style>
 </head>
@@ -644,28 +707,31 @@
 
 
   <!-- CONTACT -->
-<section id="contact" class="contact contact-bar">
-  <div class="contact-inner">
+<section id="contact" class="contact contact-template-v2">
+  <div class="contact-content">
 
-    <!-- LEFT SIDE -->
-    <div class="contact-left">
-      <p>✔ Pet-Friendly Health Focus</p>
-      <p>✔ Trusted Veterinary Service</p>
-      <p>✔ Comfort & Compassion Provided</p>
-    </div>
+    <div class="contact-features">
+      <div class="feature">
+        <span class="paw">🐾</span>
+        <p>Cozy Beds<br><small>Home-Like</small></p>
+      </div>
 
-    <!-- RIGHT SIDE -->
-    <div class="contact-right">
-      <a href="#contact" class="contact-pill">Contact Us</a>
+      <div class="feature">
+        <span class="paw">🐾</span>
+        <p>Peaceful Rest</p>
+      </div>
 
-      <div class="contact-info">
-        <span>📞 +123-456-7890</span>
-        <span>🌐 www.gentlecarevet.com</span>
+      <div class="feature">
+        <span class="paw">🐾</span>
+        <p>Trusted Care</p>
       </div>
     </div>
 
+    <a href="#contact" class="contact-cta">Contact Us</a>
+
   </div>
 </section>
+
 
 
 
