@@ -361,6 +361,35 @@
     font-size: 2rem;
   }
 }
+/* ===== CONTACT BACKGROUND IMAGE ===== */
+.contact-bg {
+  position: relative;
+  background:
+    linear-gradient(
+      rgba(249, 251, 250, 0.88),
+      rgba(249, 251, 250, 0.88)
+    ),
+    url("images/contactus.jpg") center / cover no-repeat;
+}
+
+/* Soft blue-gray tone */
+.contact-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      rgba(200, 220, 230, 0.35),
+      rgba(180, 200, 210, 0.35)
+    );
+  pointer-events: none;
+}
+
+/* Ensure text stays above overlays */
+.contact-bg > * {
+  position: relative;
+  z-index: 1;
+}
 
   </style>
 </head>
@@ -510,7 +539,7 @@
 
 
   <!-- CONTACT -->
-  <section id="contact" class="contact">
+<section id="contact" class="contact contact-bg">
     <h2>Contact Us</h2>
     <p>
       Reach out to learn more about our clinic or veterinary services.
