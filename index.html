@@ -362,28 +362,26 @@
   }
 }
 /* ===== CONTACT BACKGROUND IMAGE ===== */
+/* ===== CONTACT BACKGROUND IMAGE (FIXED) ===== */
 .contact-bg {
   position: relative;
   background:
     linear-gradient(
-      rgba(249, 251, 250, 0.88),
-      rgba(249, 251, 250, 0.88)
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url("images/contactus.jpg") center / cover no-repeat;
+}
+.contact-bg {
+  background:
+    linear-gradient(
+      rgba(230, 240, 245, 0.35),
+      rgba(230, 240, 245, 0.35)
     ),
     url("images/contactus.jpg") center / cover no-repeat;
 }
 
-/* Soft blue-gray tone */
-.contact-bg::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    linear-gradient(
-      rgba(200, 220, 230, 0.35),
-      rgba(180, 200, 210, 0.35)
-    );
-  pointer-events: none;
-}
+
 
 /* Ensure text stays above overlays */
 .contact-bg > * {
